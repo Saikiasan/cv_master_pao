@@ -9,6 +9,7 @@
     border-right: 1.5px solid #000;
     padding: 25px;
     background-color: #fff;
+    flex-shrink: 0; /* Prevent sidebar from shrinking on mobile */
 }
 
 .profile-container {
@@ -34,11 +35,13 @@
     background: rgba(0,0,0,0.5);
     color: white;
     font-size: 10px;
-    padding: 5px;
+    padding: 10px; /* Larger touch target for iOS */
     text-align: center;
     opacity: 0;
     cursor: pointer;
     transition: opacity 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .sidebar-section {

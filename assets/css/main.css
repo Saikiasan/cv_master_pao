@@ -18,6 +18,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent; /* iOS tap highlight removal */
 }
 
 body {
@@ -26,6 +27,10 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     padding: 40px 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /* Print container */
@@ -71,6 +76,7 @@ body {
     padding: 2px 4px;
     border-radius: 3px;
     background-color: rgba(0, 123, 255, 0.05);
+    -webkit-user-modify: read-write-plaintext-only; /* Safari specific */
 }
 
 [contenteditable="true"]:focus {
