@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Bio Data - Bishal Pao</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cv.css">
+</head>
+<body>
+
+    <div class="controls">
+        <button id="edit-btn" class="btn btn-primary">Edit CV</button>
+        <button id="print-btn" class="btn btn-primary">Print to PDF</button>
+    </div>
+
+    <div class="cv-container">
+        <div class="cv-layout">
+            <!-- Left Sidebar -->
+            <aside class="cv-sidebar">
+                <div class="profile-container">
+                    <img id="profile-img" src="https://via.placeholder.com/200x250" alt="Profile Picture" class="profile-img">
+                    <div id="upload-overlay" class="profile-upload-overlay">Change Image</div>
+                    <input type="file" id="file-input" style="display: none;" accept="image/*">
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Contact No.</h3>
+                    <div class="sidebar-content" data-edit="true" data-id="contact">
+                        7635880143<br>
+                        9365821049
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Address :</h3>
+                    <div class="sidebar-content" data-edit="true" data-id="address">
+                        Chenijan jorhat<br>
+                        PO : Chenijan<br>
+                        District : jorhat<br>
+                        Assam,<br>
+                        PIN-785010
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Email :</h3>
+                    <div class="sidebar-content" data-edit="true" data-id="email">
+                        subolpatra150<br>@gmail.com
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Language Known:</h3>
+                    <div class="sidebar-content" data-edit="true" data-id="languages">
+                        ASSAMESE,<br>
+                        HINDI , ENGLISH
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="cv-main">
+                <div class="cv-header">
+                    <h1 class="bio-data-title" data-edit="true" data-id="title">BIO DATA</h1>
+                    <h2 class="candidate-name" data-edit="true" data-id="name">Mr. Subal Patra</h2>
+                </div>
+
+                <div class="section-header">Career Objective</div>
+                <div class="objective-text" data-edit="true" data-id="objective">
+                    TO WORK IN AN ORGANIZATION, WHERE I CAN UTILIZE AND ENHANCE MY SKILLS THROUGH ORGANIZATIONAL GOALS.
+                </div>
+
+                <div class="section-header">Personal Details</div>
+                <ul class="details-list">
+                    <li class="details-item">
+                        <span class="details-label">• FATHER'S NAME :</span>
+                        <span class="details-value" data-edit="true" data-id="father">CHENIRAM PATRA</span>
+                    </li>
+                    <li class="details-item">
+                        <span class="details-label">« MATHER'S NAME :</span>
+                        <span class="details-value" data-edit="true" data-id="mother">MAMONI PATRA</span>
+                    </li>
+                    <li class="details-item">
+                        <span class="details-label">« NATIONALITY :</span>
+                        <span class="details-value" data-edit="true" data-id="nationality">INDIAN</span>
+                    </li>
+                    <li class="details-item">
+                        <span class="details-label">• RELIGION :</span>
+                        <span class="details-value" data-edit="true" data-id="religion">HINDU</span>
+                    </li>
+                    <li class="details-item">
+                        <span class="details-label">• GENDER :</span>
+                        <span class="details-value" data-edit="true" data-id="gender">MALE</span>
+                    </li>
+                    <li class="details-item">
+                        <span class="details-label">• DATE OF Birth :</span>
+                        <span class="details-value" data-edit="true" data-id="dob">13/04/2000</span>
+                    </li>
+                </ul>
+
+                <div class="section-header">Educational Qualification</div>
+                <table class="qualification-table">
+                    <tr>
+                        <td class="qualification-bullet">«</td>
+                        <td data-edit="true" data-id="edu1">HSLC PASSED-51.5% (KENDUGURI JATIYA VIDYALAYA)</td>
+                    </tr>
+                    <tr>
+                        <td class="qualification-bullet">•</td>
+                        <td data-edit="true" data-id="edu2">HS PASSED-46.2% IN ARTS (PRAGYAN JUNIOR COLLEGE)</td>
+                    </tr>
+                    <tr>
+                        <td class="qualification-bullet">•</td>
+                        <td data-edit="true" data-id="edu3">DIPLOMA IN CIVIL ENGG. -57.95% (SIBSAGAR POLYTECHNIC )</td>
+                    </tr>
+                </table>
+
+                <div class="section-header">Professional Qualification</div>
+                <div class="objective-text" data-edit="true" data-id="prof-qual">
+                    Microsoft Office, Microsoft office, Auto CAD, Leadership skill, Conflict resolution, Strong communication, Problem – solving Critical thinking
+                </div>
+
+                <div class="section-header">Skills</div>
+                <div class="skills-text" data-edit="true" data-id="skills">
+                    GOOD VERBAL AND WRITTEN COMMUNICATION SKILLS
+                </div>
+
+                <div class="declaration-box">Declaration</div>
+                <div class="declaration-text" data-edit="true" data-id="declaration">
+                    I CERTIFY THAT THE INFORMATION PROVIDED IN THE RESUME ISTRUE AND ACCURATE TO THE BEST TO MY KNOWLEDGE.
+                </div>
+
+                <div class="footer-info">
+                    <div class="footer-item">DATE: <span data-edit="true" data-id="date">19/12/2025</span></div>
+                    <div class="footer-item">PLACE: <span data-edit="true" data-id="place">JORHAT</span></div>
+                </div>
+
+                <div class="signature-label">SIGNATURE</div>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
